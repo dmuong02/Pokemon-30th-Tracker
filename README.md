@@ -45,6 +45,7 @@ I tested three APIs before starting:
 - I assumed all 30 Pikachu cards are equally easy to pull from packs. If some are rarer, that could explain part of the price difference.
 - Only 2 cards are Futuristic Rares, so I can't draw strong conclusions about that rarity.
 - The raw price data isn't included in this repo because JustTCG's terms don't allow sharing it.
+- The three "RGB Mew" secret rares aren't on official card lists. JustTCG began tracking the G/RGB Mew on September 25, so it has no release-day price.
 
 ## What I Learned
 
