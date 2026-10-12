@@ -11,12 +11,13 @@ I built this project to track the market prices of every card in Pokémon TCG's 
 1. How do card prices change in the weeks after a set is released?
 2. What makes one card worth more than another: its rarity, the Pokémon, or the artwork?
 
-## What I Found So Far (as of September 24, 2026)
+## What I Found So Far (as of October 12, 2026)
 
-- Prices dropped for every rarity the day after release. The cheapest cards (Commons and Rares) fell from about $0.90 to about $0.20 and then stayed flat.
-- The most valuable new cards (Futuristic Rares and Special Illustration Rares) are still slowly losing value.
-- The Classic Collection reprints include the two most expensive cards in the set: Lugia and Charizard.
-- Artwork matters. There are 30 Pikachu cards at the same rarity, and the only difference between them is the artist. Their prices range from about $1 to $6, and Shinji Kanda's Pikachu is the most valuable.
+- Prices fell for almost every card after release. The cheapest cards (Commons and Rares) dropped from about $0.90 to about $0.20 the day after release and have stayed there.
+- The most valuable new cards kept falling for weeks. Futuristic Rares and Special Illustration Rares started around $190 and $115 and are now both around $50.
+- Illustration Rares dropped from about $10 to about $5 in early October, around when the October 2 products (Booster Bundles and Mini Tins) came out. The timing lines up, but I can't prove the new products caused it.
+- The three hidden "RGB Mew" cards are by far the most valuable cards in the set, worth thousands of dollars each.
+- Artwork still matters, but every Pikachu has lost value. All 30 Pikachu Rares are cheaper than on release day. Shinji Kanda's is still the most valuable at about $2, down from over $6 in late September..
 
 ## How It Works
 
@@ -46,6 +47,8 @@ I tested three APIs before starting:
 - Only 2 cards are Futuristic Rares, so I can't draw strong conclusions about that rarity.
 - The raw price data isn't included in this repo because JustTCG's terms don't allow sharing it.
 - The three "RGB Mew" secret rares aren't on official card lists. JustTCG began tracking the G/RGB Mew on September 25, so it has no release-day price.
+- The three “RGB Mew” secret rares aren’t on official card lists. JustTCG began tracking them between September 25 and October 7, so they have no release-day prices and are excluded from the price-since-release chart.
+In early October, JustTCG changed its card IDs, which created duplicate cards in my database. I matched the old and new IDs using TCGplayer product IDs, copied over the illustrator data, and removed the duplicates.
 
 ## What I Learned
 
